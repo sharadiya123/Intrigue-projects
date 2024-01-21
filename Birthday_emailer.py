@@ -45,7 +45,7 @@ if __name__ == "__main__":
       
         if (today == bday) and yearNow not in str(item['LastWishedYear']):  #if today matches with the current friend's birthday (date and month) AND the year where we last wished them was NOT this year, we go ahead and wish this person
             #we send the mail to wish HBD
-            sendEmail(item['Email'], "Happy Birthday", item['Dialogue'])
+            sendEmail(item['Email'], "Happy Birthday", item['Message'])
             writeInd.append(index)   #storing CURRENTLY WISHED friend's index to this list.
 
     if writeInd != None:  #meaning we HAVE wished some people so far with this application
